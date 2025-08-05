@@ -1,3 +1,5 @@
+import verifyRecordService from '../service/verify-record-service';
+
 export const userConst = {
 	status: {
 		NORMAL: 0,
@@ -74,7 +76,7 @@ export const settingConst = {
 	},
 	addEmail: {
 		OPEN: 0,
-		CLOSE: 1,
+		CLOSE: 1
 	},
 	manyEmail: {
 		OPEN: 0,
@@ -83,10 +85,12 @@ export const settingConst = {
 	registerVerify: {
 		OPEN: 0,
 		CLOSE: 1,
+		COUNT: 2,
 	},
 	addEmailVerify: {
 		OPEN: 0,
 		CLOSE: 1,
+		COUNT: 2,
 	},
 	forwardStatus: {
 		OPEN: 0,
@@ -99,7 +103,16 @@ export const settingConst = {
 	ruleType: {
 		ALL: 0,
 		RULE: 1
+	},
+	noRecipient: {
+		OPEN: 0,
+		CLOSE: 1,
 	}
+}
+
+export const verifyRecordType = {
+	REG: 0,
+	ADD: 1,
 }
 
 
